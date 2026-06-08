@@ -14,7 +14,7 @@ export function Navbar() {
     <header className="navbar">
       <div className="navbar-inner page-shell">
         <Link href="/" className="brand">
-          CARL
+          CARL ANDERSON SANIEL
         </Link>
 
         <nav className="nav-links">
