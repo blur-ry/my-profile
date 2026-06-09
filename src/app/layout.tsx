@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
 import { Inter, Montserrat, JetBrains_Mono } from 'next/font/google';
@@ -12,6 +12,11 @@ const jetbrains = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500', '6
 export const metadata: Metadata = {
   title: 'Ignition Portfolio System | Carl Anderson Saniel',
   description: 'A dark, high-impact engineering portfolio built with Next.js, TypeScript, and Supabase.',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

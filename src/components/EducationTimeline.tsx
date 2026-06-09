@@ -25,7 +25,32 @@ const education = [
     role: 'Elementary School Student',
     description: 'The basics of foundating subjects.',
   },
-  
+];
+
+const certifications = [
+  {
+    title: 'Cloud Computing Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    description:
+      'Completed the course of IBM Skillsbuild where we learn the path on Cloud Computing Fundamentals',
+  },
+  {
+    title: 'Digital Literacy',
+    issuer: 'IBM SkillsBuild',
+    description: 'Completed the course of IBM SkillsBuild certification in the Digital Literacy',
+  },
+  {
+    title: 'Information Technology Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    description:
+      'Completed the course of IBM SkillsBuild certification in Information Technology Fundamentals',
+  },
+  {
+    title: 'User Experience Design Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    description:
+      'Completed the course of IBM SkillsBuild certification in User Experience Design Fundamentals',
+  },
 ];
 
 export function EducationTimeline() {
@@ -49,6 +74,21 @@ export function EducationTimeline() {
               <h3 className="education-degree">{item.degree}</h3>
               <p className="education-role">{item.role}</p>
               <p className="education-field">{item.field}</p>
+              <p className="education-description">{item.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="section-headline education-certifications-headline">
+          <p className="section-subtitle">ACHIEVEMENTS AND CERTIFICATION</p>
+          <h2 className="section-title">Achievements and Certification</h2>
+        </div>
+
+        <div className="education-grid">
+          {certifications.map((item) => (
+            <div key={item.title} className="education-item">
+              <h3 className="education-degree">{item.title}</h3>
+              <p className="education-role">{item.issuer}</p>
               <p className="education-description">{item.description}</p>
             </div>
           ))}

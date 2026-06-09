@@ -4,19 +4,29 @@ export function AboutSection() {
   return (
     <section className="section" id="about">
       <div className="about-container">
-        <div className="who-am-i-circle">
-          <Image
-            src="/myself.png"
-            alt="Profile photo"
-            className="who-am-i-img"
-            fill
-            sizes="280px"
-          />
-        </div>
+        <div className="about-hero">
+          <div className="about-portrait-frame">
+            <Image
+              src="/myself-formal.png"
+              alt="Carl Anderson D. Saniel — professional portrait"
+              className="about-portrait-img"
+              fill
+              sizes="(max-width: 768px) 100vw, 360px"
+              priority
+            />
+          </div>
 
-        <div className="profile-info">
-          <h2 className="profile-name">Carl Anderson D. Saniel</h2>
-          <p className="profile-degree">Bachelor of Science in Computer Science</p>
+          <div className="about-hero-content">
+            <p className="section-subtitle">ABOUT ME</p>
+            <div className="profile-info about-profile-info">
+              <h2 className="profile-name">Carl Anderson D. Saniel</h2>
+              <p className="profile-degree">Bachelor of Science in Computer Science</p>
+            </div>
+            <p className="about-hero-summary">
+              A passionate student on the path to becoming a senior software engineer — building digital
+              products through clean code, intuitive design, and efficient development practices.
+            </p>
+          </div>
         </div>
 
         <div className="about-introduction">
@@ -36,7 +46,7 @@ export function AboutSection() {
           </div>
 
           <div className="intro-section">
-            <h3 className="intro-title">What Am I Different</h3>
+            <h3 className="intro-title">Why I Am Different</h3>
             <p className="intro-text">
               What sets me apart is my ability to combine technical development with design thinking. I enjoy not only building functional applications but also crafting interfaces that are visually appealing and easy to use.
             </p>
