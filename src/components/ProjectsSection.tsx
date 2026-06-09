@@ -2,39 +2,21 @@ import { ProjectCard } from './ProjectCard';
 
 const projects = [
   {
-    title: 'Vortex-7 Engine',
-    description: 'A high-performance concurrent processing engine written in Rust, achieving 40% faster execution for large-scale data pipelines.',
-    label: 'Featured',
-    link: '#',
-  },
-  {
     title: 'Blood Donation Management System (BDMS)',
     description: 'A full-stack platform to manage donors, blood inventories, and donation events with scheduling and reporting features.',
     label: 'Healthcare',
     link: '#',
   },
   {
-    title: 'Mesh Protocol',
-    description: 'A decentralized peer-to-peer communication layer for IoT devices.',
-    label: 'System',
-    link: '#',
-  },
-  {
-    title: 'Coreshell AI',
-    description: 'Integrated terminal UI assistant for DevOps automation workflows.',
-    label: 'Utility',
+    title: 'Community Health Dashboard',
+    description: 'Visual analytics for local health metrics, blood stock levels, and donation trends.',
+    label: 'Analytics',
     link: '#',
   },
   {
     title: 'Donor Connect',
     description: 'A donor-facing portal for scheduling donations, viewing eligibility, and tracking impact.',
     label: 'Platform',
-    link: '#',
-  },
-  {
-    title: 'Community Health Dashboard',
-    description: 'Visual analytics for local health metrics, blood stock levels, and donation trends.',
-    label: 'Analytics',
     link: '#',
   },
 ];
@@ -55,10 +37,7 @@ export function ProjectsSection() {
             <span className="panel-label">{featured.label || 'Featured'}</span>
             <h3 className="project-title">{featured.title}</h3>
             <p className="section-copy">{featured.description}</p>
-            <div className="project-actions">
-              <a className="button" href={featured.link || '#'}>Source</a>
-              <a className="button button-secondary" href={featured.link || '#'}>Live Demo</a>
-            </div>
+            <a href={featured.link || '#'} className="nav-link">View GitHub →</a>
           </div>
         )}
 
