@@ -70,17 +70,7 @@ export function Navbar() {
             aria-hidden={!open}
             inert={open ? undefined : true}
           >
-            <div className="nav-sidebar-header">
-              <p className="nav-sidebar-brand">CARL ANDERSON SANIEL</p>
-              <button
-                type="button"
-                className="nav-sidebar-close"
-                aria-label="Close navigation menu"
-                onClick={closeMenu}
-              >
-                ×
-              </button>
-            </div>
+            <p className="nav-sidebar-brand">CARL ANDERSON SANIEL</p>
 
             <nav className="nav-sidebar-links" aria-label="Mobile navigation">
               {navItems.map((item) => (
@@ -111,7 +101,7 @@ export function Navbar() {
     : null;
 
   return (
-    <header className="navbar">
+    <header className={`navbar${open ? ' navbar--menu-open' : ''}`}>
       <div className="navbar-inner page-shell">
         <div className="navbar-top">
           <Link href="/" className="brand" onClick={closeMenu}>

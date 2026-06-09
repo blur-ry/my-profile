@@ -16,22 +16,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="hero-panel">
-          <div className="code-window">
-            <div className="code-header">
-              <span className="dot red" />
-              <span className="dot yellow" />
-              <span className="dot green" />
-            </div>
-            <div className="code-content">
-              <div className="code-line short" />
-              <div className="code-line long" />
-              <div className="code-line medium" />
-              <div className="code-line long" />
-              <div className="code-line short" />
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

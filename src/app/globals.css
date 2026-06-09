@@ -413,6 +413,81 @@ body.nav-menu-open {
   border-color: rgba(255, 77, 0, 0.3);
 }
 
+/* Mobile sidebar: burger toggles open/close — no top bar, line, or close box */
+@media (max-width: 768px) {
+  .nav-sidebar {
+    top: 3.5rem;
+    height: calc(100dvh - 3.5rem);
+    height: calc(100vh - 3.5rem);
+    padding-top: 1.25rem;
+    gap: 1rem;
+  }
+
+  .nav-sidebar-header,
+  .nav-sidebar-close {
+    display: none !important;
+  }
+
+  body.nav-menu-open .navbar {
+    border-bottom: none;
+  }
+
+  .nav-burger {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-burger:focus,
+  .nav-burger:focus-visible,
+  .nav-burger:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .nav-sidebar-brand {
+    padding: 0 0.25rem;
+  }
+
+  .nav-sidebar-links {
+    gap: 0.25rem;
+  }
+
+  .nav-sidebar-link {
+    padding: 0.85rem 0.75rem;
+    font-size: 0.88rem;
+    letter-spacing: 0.12em;
+  }
+
+  .nav-sidebar-resume {
+    margin-top: 0.5rem;
+    padding: 0.85rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-sidebar {
+    top: 3.25rem;
+    width: min(280px, 88vw);
+    height: calc(100dvh - 3.25rem);
+    height: calc(100vh - 3.25rem);
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  .nav-sidebar-brand {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-sidebar-link {
+    padding: 0.75rem 0.65rem;
+    font-size: 0.82rem;
+  }
+}
+
 .nav-sidebar-links {
   display: flex;
   flex-direction: column;
@@ -1538,6 +1613,16 @@ body.nav-menu-open {
     display: flex;
     position: relative;
     z-index: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .navbar--menu-open {
+    border-bottom: none;
   }
 
   .nav-sidebar {
