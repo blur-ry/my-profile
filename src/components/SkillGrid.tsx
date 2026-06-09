@@ -19,6 +19,10 @@ const categories = [
     title: 'Currently Learning',
     items: ['WebAssembly', 'LLM Fine-tuning', 'Rust', 'Cloud Infrastructure'],
   },
+  {
+    title: 'Why Hire Me',
+    items: ['Problem Solving', 'Product Development', 'debugged', 'Collaboration'],
+  },
 ];
 
 export function SkillGrid() {
