@@ -86,9 +86,8 @@ export function Navbar() {
             </nav>
 
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+              href="/SOFT-COPY_CarlsResume.docx"
+              download="Carl_Anderson_Saniel_Resume.docx"
               className="button button-secondary nav-sidebar-resume"
               onClick={closeMenu}
             >
@@ -132,9 +131,8 @@ export function Navbar() {
         </nav>
 
         <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
+          href="/SOFT-COPY_CarlsResume.docx"
+          download="Carl_Anderson_Saniel_Resume.docx"
           className="button button-secondary nav-button nav-button--desktop"
         >
           Resume
