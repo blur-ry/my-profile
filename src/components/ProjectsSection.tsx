@@ -46,7 +46,7 @@ export function ProjectsSection() {
     <section className="section" id="projects">
       <div className="section-headline page-shell">
         <p className="section-subtitle">WHERE CODE MEETS METAL</p>
-        <h2 className="section-title">Projects only</h2>
+        <h2 className="section-title">Projects</h2>
       </div>
 
       <div className="project-grid page-shell">

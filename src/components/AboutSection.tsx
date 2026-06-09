@@ -1,12 +1,17 @@
+import Image from 'next/image';
+
 export function AboutSection() {
   return (
     <section className="section" id="about">
       <div className="about-container">
         <div className="who-am-i-circle">
-          <img src="/profile.jpg" alt="Profile photo" className="who-am-i-img" />
-          <div className="circle-content">
-            <p className="circle-text">Who I am</p>
-          </div>
+          <Image
+            src="/myself.png"
+            alt="Profile photo"
+            className="who-am-i-img"
+            fill
+            sizes="280px"
+          />
         </div>
 
         <div className="profile-info">

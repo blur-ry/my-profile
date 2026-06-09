@@ -6,11 +6,13 @@ export function HeroSection() {
           <p className="section-subtitle">INITIALIZING STUDENT...</p>
           <h1 className="hero-heading">Hello, I am Carl Anderson Saniel</h1>
           <p className="section-copy hero-copy">
-            Architecting high-performance digital ecosystems with a focus on distributed systems, interface polish, and terminal-speed optimization.
+            A college students that is very passionate about software development, machine learning, and technology in general. 
+            I am currently pursuing a degree in Computer Science at the University of the Arellano, 
+            and I am always looking for new opportunities to learn and grow as a developer
           </p>
           <div className="hero-actions">
-            <a className="button" href="#projects">View My Work</a>
-            <a className="button button-secondary" href="#contact">Connect</a>
+            <a className="button" href="#projects">View My School Projects</a>
+            <a className="button button-secondary" href="#contact">Reach Me</a>
           </div>
         </div>
 
